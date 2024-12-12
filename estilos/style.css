@@ -9,11 +9,11 @@
 html,body{
     height: 100vh;/*100% da tela visível*/
     width: 100vh;/*100% da tela visível*/
-    background-color: black;
+    /*background-color: black;*/
 }
 
 body{
-    background-image: url('../imagens/fundo-madeira.jpg');
+    background: black url('../imagens/fundo-madeira.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -37,6 +37,17 @@ section#telefone{
     height: 627px;
     width: 311px;
     /*Fundo da section é a imagem*/
-    background-image:url('../imagens/frame-iphone.png');
+    background:black url('../imagens/frame-iphone.png');
     background-repeat: no-repeat;
+}
+
+iframe#tela{/*Para o iframe de id tela*/
+    position: relative;/*Permite definir o posicionamento na tela pelo top e left*/
+    /*Posicionamento na tela pela top e esquerda*/
+    top:80px;
+    left:22px;
+    /*Tamanho altura e arredondamento da borda*/
+    width: 268px;
+    height: 472px;
+    border-radius: 3px;
 }
