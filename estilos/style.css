@@ -37,7 +37,7 @@ section#telefone{
     height: 627px;
     width: 311px;
     /*Fundo da section é a imagem*/
-    background:black url('../imagens/frame-iphone.png');
+    background: url('../imagens/frame-iphone.png');
     background-repeat: no-repeat;
 }
 
@@ -50,4 +50,26 @@ iframe#tela{/*Para o iframe de id tela*/
     width: 268px;
     height: 472px;
     border-radius: 3px;
+}
+
+section#redes-sociais{
+    text-align: right;
+}
+section#redes-sociais img {/*Para toda tag img dentro da section de id redes sociais*/
+    width: 50px;
+    margin:10px;
+    border-radius: 50%; /*Torna a imagem redonda*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.361);
+    box-sizing: border-box;/*Torda a borda parte da caixa - (pra que o ícone não mexa na animação do hover)*/
+}
+
+/*
+Pseudoclasse para as tag img da tag section de id redes-sociais
+Executa uma ação específica ao passar o mouse sobre a img
+*/
+section#redes-sociais img:hover{
+    border: 2px solid white;/*Torna as bordas brancas ao passar o mouse*/
+    transform: translate(-3px, -3px);/*Move o ícone 3px para esquerda e pra cima*/
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.366);/*Expande a sombra*/
+    transition: transform 0.3s, border 0.3s/*O transforme e o efeito borda demoram 0.3 segundos - suavidade*/
 }
