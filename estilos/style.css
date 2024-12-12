@@ -13,7 +13,7 @@ html,body{
 }
 
 body{
-    background: black url('../imagens/fundo-madeira.jpg');
+    background: url('../imagens/fundo-madeira.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -37,7 +37,6 @@ section#telefone{
     height: 627px;
     width: 311px;
     /*Fundo da section é a imagem*/
-    /*background: url('../imagens/frame-iphone.png');*/
     background: url('../imagens/frame-iphone.png');
     background-repeat: no-repeat;
 }
