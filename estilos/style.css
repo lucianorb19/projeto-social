@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+*{ /*PARA TODOS ELEMENTOS, MARGEM E PADDING ZERADOS*/
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    height: 100vh;/*100% da tela visível*/
+    width: 100vh;/*100% da tela visível*/
+    background-color: black;
+}
+
+body{
+    background-image: url('../imagens/fundo-madeira.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+main{
+    position: relative; /*permite criar dentro deles itens com position absolute (que podem ser posicionados livremente)*/
+    height: 100vh;/*100% da tela visível*/
+    width: 100vw;
+}
+
+section#telefone{
+    position: absolute;/*permite posicionar livremente*/
+    /*Centralização no main*/
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    /*Tamano da section mesmo da imagem*/
+    height: 627px;
+    width: 311px;
+    /*Fundo da section é a imagem*/
+    background-image:url('../imagens/frame-iphone.png');
+    background-repeat: no-repeat;
+}
